@@ -202,14 +202,14 @@ The implementation language is Rust. System design must align with Rust’s stre
 ```mermaid
 graph TD
   External[External Client] -->|HTTP REST| Api[HTTP API Adapter]
-  Web[First-party Web UI (SPA)] -->|HTTP REST| Api
+  Web["First-party Web UI (SPA)"] -->|HTTP REST| Api
   Api -->|Static assets| Web
   Api -->|Commands/Queries| App[Application Services]
   App --> Domain[Domain Model]
   App --> Repo[Persistence Port]
   Repo --> Sqlite[SQLite Adapter]
   App --> Auth[AuthN/AuthZ]
-  App --> Notif[Notification/Events (internal)]
+  App --> Notif["Notification/Events (internal)"]
 ```
 
 **Components**:
