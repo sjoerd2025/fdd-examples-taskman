@@ -25,6 +25,11 @@ A full-featured example project built with [FDD](https://github.com/cyberfabric/
 - Demonstrates codegen/autogen based on FDD specs (plus traceability validation).
 - Handy commands: `make build`, `make test`, `make run`, `make validate`.
 
+## Demo credentials
+
+- Email: `demo@example.com`
+- Password: any value **except** `invalid`
+
 ## Screenshots
 
 ### **UI: Auth Page**
