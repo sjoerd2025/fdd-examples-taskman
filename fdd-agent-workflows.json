@@ -1,0 +1,50 @@
+{
+  "version": 1,
+  "agents": {
+    "windsurf": {
+      "workflow_dir": ".windsurf/workflows",
+      "workflow_command_prefix": "fdd-",
+      "workflow_filename_format": "{command}.md",
+      "template": [
+        "# /{command}",
+        "",
+        "ALWAYS open and follow `{target_workflow_path}`"
+      ]
+    },
+    "cursor": {
+      "workflow_dir": ".cursor/commands",
+      "workflow_command_prefix": "fdd-",
+      "workflow_filename_format": "{command}.md",
+      "template": [
+        "# /{command}",
+        "",
+        "ALWAYS open and follow `{target_workflow_path}`"
+      ]
+    },
+    "claude": {
+      "workflow_dir": ".claude/commands",
+      "workflow_command_prefix": "fdd-",
+      "workflow_filename_format": "{command}.md",
+      "template": [
+        "---",
+        "description: Proxy to FDD workflow {workflow_name}",
+        "---",
+        "",
+        "ALWAYS open and follow `{target_workflow_path}`"
+      ]
+    },
+    "copilot": {
+      "workflow_dir": ".github/prompts",
+      "workflow_command_prefix": "fdd-",
+      "workflow_filename_format": "{command}.prompt.md",
+      "template": [
+        "---",
+        "name: {command}",
+        "description: Proxy to FDD workflow {workflow_name}",
+        "---",
+        "",
+        "ALWAYS open and follow `{target_workflow_path}`"
+      ]
+    }
+  }
+}

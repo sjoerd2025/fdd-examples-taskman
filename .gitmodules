@@ -1,0 +1,3 @@
+[submodule ".fdd"]
+	path = .fdd
+	url = git@github.com:cyberfabric/FDD.git

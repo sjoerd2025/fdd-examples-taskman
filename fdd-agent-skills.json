@@ -1,0 +1,81 @@
+{
+  "version": 1,
+  "agents": {
+    "windsurf": {
+      "skill_name": "fdd",
+      "outputs": [
+        {
+          "path": ".windsurf/skills/fdd/SKILL.md",
+          "template": [
+            "---",
+            "name: {skill_name}",
+            "description: Proxy to FDD core skill instructions",
+            "---",
+            "",
+            "ALWAYS open and follow `{target_skill_path}`"
+          ]
+        }
+      ]
+    },
+    "cursor": {
+      "outputs": [
+        {
+          "path": ".cursor/rules/fdd.mdc",
+          "template": [
+            "---",
+            "description: Proxy to FDD core skill instructions",
+            "alwaysApply: true",
+            "---",
+            "",
+            "ALWAYS open and follow `{target_skill_path}`"
+          ]
+        },
+        {
+          "path": ".cursor/commands/fdd.md",
+          "template": [
+            "# /fdd",
+            "",
+            "ALWAYS open and follow `{target_skill_path}`"
+          ]
+        }
+      ]
+    },
+    "claude": {
+      "outputs": [
+        {
+          "path": ".claude/commands/fdd.md",
+          "template": [
+            "---",
+            "description: Proxy to FDD core skill instructions",
+            "---",
+            "",
+            "ALWAYS open and follow `{target_skill_path}`"
+          ]
+        }
+      ]
+    },
+    "copilot": {
+      "outputs": [
+        {
+          "path": ".github/copilot-instructions.md",
+          "template": [
+            "# FDD",
+            "",
+            "ALWAYS open and follow `{target_skill_path}`"
+          ]
+        },
+        {
+          "path": ".github/prompts/fdd-skill.prompt.md",
+          "template": [
+            "---",
+            "name: fdd-skill",
+            "description: Proxy to FDD core skill instructions",
+            "---",
+            "",
+            "ALWAYS open and follow `{target_skill_path}`"
+          ]
+        }
+      ]
+    }
+  }
+}

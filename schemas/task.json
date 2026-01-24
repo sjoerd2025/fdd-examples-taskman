@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "task.json",
+  "title": "Task",
+  "type": "object",
+  "required": ["id", "title", "status", "created_at", "updated_at"],
+  "properties": {
+    "id": {"type": "string", "format": "uuid"},
+    "title": {"type": "string", "minLength": 1, "maxLength": 200},
+    "description": {"type": ["string", "null"], "maxLength": 20000},
+    "status": {"type": "string", "enum": ["to-do", "in-progress", "done"]},
+    "due_at": {"type": ["string", "null"], "format": "date-time"},
+    "assignee_user_id": {"type": ["string", "null"], "format": "uuid"},
+    "team_id": {"type": ["string", "null"], "format": "uuid"},
+    "created_at": {"type": "string", "format": "date-time"},
+    "updated_at": {"type": "string", "format": "date-time"}
+  }
+}
