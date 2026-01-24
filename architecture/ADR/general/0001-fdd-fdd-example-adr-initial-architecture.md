@@ -2,7 +2,7 @@
 
 **Date**: 2026-01-23
 
-**Status**: Proposed
+**Status**: Accepted
 
 **ADR ID**: `fdd-fdd-example-adr-initial-architecture`
 
