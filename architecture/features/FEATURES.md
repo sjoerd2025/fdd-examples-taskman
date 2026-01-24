@@ -75,7 +75,7 @@
 ### 3. [fdd-fdd-example-feature-first-party-web-ui](feature-first-party-web-ui/) 🔄 HIGH
 
 - **Purpose**: First-party Web UI (React + TypeScript) for managing tasks, teams, and comments, served as static assets by the backend.
-- **Status**: DONE
+- **Status**: IN_PROGRESS
 - **Depends On**: [feature-platform-core](feature-platform-core/), [feature-business-domain](feature-business-domain/)
 - **Blocks**: None
 - **Scope**:
